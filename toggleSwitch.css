@@ -1,0 +1,55 @@
+/** THIS IS THE SWITCH THAT WILL BE USED UNIVERSALLY**/
+
+
+/* The switch - the box around the slider */
+.switch {
+ font-size: 17px;
+ position: absolute;
+ top: 25%;
+ left: 0rem;
+ display: inline-block;
+ width: 2em;
+ height: 2em;
+ transition: 1s;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ height: 2em;
+ width: 2em;
+ background-color: transparent;
+ transition: .4s;
+ border-radius: 30px;
+
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 2em;
+ width: 1.5em;
+ border-radius: 20px;
+ border-top-left-radius: 0px;
+ border-bottom-left-radius: 0px;
+ background-color: white;
+ color: white;
+ transition: .4s;
+ text-align: center;
+ line-height: 2em;
+}
+
+input:checked + .slider:before {
+ content: "";
+ background-color: white;
+ color: black;
+ transition: .4s;
+}
