@@ -15,6 +15,12 @@
 		<link href="Login.css" rel="stylesheet" type="text/css" />
     <link href="Homepage/script.js" type="text/javascript"/>
 		 <link href="Homepage/Parallax.css" rel="stylesheet" type="text/css" />
+     <link href="Homepage/style.css" rel="stylesheet" type="text/css" />
+
+     
+
+  
+  
 
   </head>
   <body>
@@ -22,18 +28,33 @@
       <div class="contact-title">
         <h1>Say Hello</h1>
         <h2>We'd Love to hear from you!</h2>
+        <br></br>
       </div>
  
       <form action="https://formsubmit.co/Madhevkeecheril@gmail.com" method="POST"
       <input type="hidden" name="_subject" value="New submission!">
-      <input type="text" name="name" placeholder=" name"required>
-        <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="name" placeholder=" name"   class="namebox" required>
+      <br></br>
+      <br></br>
+        <input type="email" name="email" placeholder="Email Address" class="emailbox" required>
+        <br></br>
+        <br></br>
         <input type="hidden" name="_next" value="thankyou.html">
-        <input type="text" name="message" class="form-control" placeholder="Write your Message" required>
+        <textarea type="text" name="message" class="form-control" placeholder="Write your Message" required></textarea>
         <input type="hidden" name="_cc" value="midzriz15@gmail.com">
         <input type="text" name="_honey" style="display:none">
         <input type="hidden" name="_captcha" value="false">
-        <button type="submit">Send</button>
+        <button>
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+              </svg>
+            </div>
+          </div>
+          <span>Send</span>
+        </button>
 
     </div>
 </html>

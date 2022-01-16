@@ -1,33 +1,154 @@
-
 body{
-	margin: 0;
+	background-image: url('lightbg-min.jpg');
+}
+
+
+* {
 	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  }
+  body {
+	font-family: "Montserrat";
+  }
+  section {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  }
+  .container {
+	  position: relative;
+	  top: 89px;
+	width: 90%;
+	width: 500px;
+	height: 580px;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: 10px 20px 25px  #0000005b;
+	background-color: #818589;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	text-decoration-color: white;
+  }
+ 
+
+.namebox{
+height: 30px;
+width: 456px;
+background-color: white;
+border: none;
+color: rgb(46, 46, 46);
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+
+
+
+
+
+.emailbox{
+	height: 30px;
+width: 456px;
+height: 30px;
+width: 456px;
+background-color: white;
+border: none;
+color: rgb(46, 46, 46);
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.form-control{
+	height: 70px;
+width: 456px;
+
+background-color: white;
+border: none;
+color: rgb(46, 46, 46);
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.contact-title{
+	text-decoration: solid;
 	text-align: center;
-background: url(lightbg-min.jpg) no-repeat center center fixed;
-background-size: cover;
-background-position-x: 0;
-	font-family: sans-serif;
-	
+	text-decoration-color: white;
+	font:bold;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.contact-title
-{
-  margin-top: 100px;
-	color:  black;
-	text-transform: uppercase;
-	transition: all 4s ease-in-out;
+button {
+	font-family: inherit;
+	font-size: 20px;
+	background: rgb(52, 69, 122);
+	color: white;
+	padding: 0.7em 1em;
+	padding-left: 0.9em;
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 16px;
+	overflow: hidden;
+	transition: all 0.2s;
+	position: fixed;
+	top: 529px;
+	width: 98px;
+	height: 75px;
+	left: 910px;
+	align-items:center ;
 
-}
-
-.contact-title h1{
-  position: relative;
-	font-size: 32px;
-	line-height: 10px;
-
-}
-
-.contact-title h2 {
-  margin-top: 5rem;
-	font-size: 16px;
-}
+   }
+   
+   button span {
+	display: block;
+	margin-left: 0.3em;
+	transition: all 0.3s ease-in-out;
+   }
+   
+   button svg {
+	display: block;
+	transform-origin: center center;
+	transition: transform 0.3s ease-in-out;
+   }
+   
+   button:hover .svg-wrapper {
+	animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   button:hover svg {
+	transform: translateX(1.2em) rotate(45deg) scale(1.1);
+   }
+   
+   button:hover span {
+	transform: translateX(5em);
+   }
+   
+   button:active {
+	transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+	from {
+	 transform: translateY(0.1em);
+	}
+   
+	to {
+	 transform: translateY(-0.1em);
+	}
+   }
+   
+   
