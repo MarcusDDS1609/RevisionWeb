@@ -176,7 +176,7 @@ margin-top: 4px;
   font-family: 'Source Sans Pro', sans-serif; 
   font-weight: "600";
   padding: 0.5rem;
-  color: #1E3E7E;
+  color: #3266ce;
 }
 
 
@@ -292,7 +292,8 @@ margin-top: 4px;
   border-color: transparent;
   background-attachment: fixed;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  filter: blur(1px);
+  filter: blur(0.5px);
+  color: white;
  
 
 }
@@ -307,14 +308,16 @@ margin-top: 4px;
 .sbj:hover:before {
  margin-left: 0px;
  opacity: 1;
+ 
 }
 
 .sbj:hover {
- background: rgba(0, 0, 0, 0.02);
- border: solid 1px gainsboro;
- filter: blur(0px);
- color: #006bb3;
-}
+  background: rgba(0, 0, 0, 0.02);
+  border: solid 1px gainsboro;
+  filter: blur(0px);
+  color: #006bb3;
+  animation: sbjbounce 2s ease 0s infinite normal forwards;
+ }
 
 .popup {
   position: absolute;
@@ -400,4 +403,58 @@ input:checked + .slider:before {
   left: 10px;
   background-color: transparent;
   color: white;
+}
+
+nav ul li:hover{
+  background: transparent;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  border-radius: 12px;
+  transition: background-color 100ms ease;
+  color: #006bb3;
+
+}
+
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 45px;
+	font-weight:900;
+	font-family: 'Comfortaa', cursive;
+  font-family: 'Source Sans Pro', sans-serif
+  
+}
+nav ul li a:hover{
+  text-decoration: none;
+  color: white;
+  padding: 45px;
+	font-weight:900;
+	font-family: 'Comfortaa', cursive;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #006bb3;
+}
+@keyframes sbjbounce {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }

@@ -1,7 +1,8 @@
 *{
   margin:0;
   padding:0;
-  font-family:verdana;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Source Sans Pro', sans-serif
 }
 #abc{
   width:100%;
@@ -36,14 +37,247 @@ nav ul li{
 	
 }
 nav ul li:hover{
-  background-color: darkslateblue;
-	border-radius: 12px;
+  background-color: lightblue;
+  border-radius: 12px;
+  transition: background-color s ease;
+  color: #006bb3;
+
 }
+
+
 nav ul li a{
   text-decoration: none;
-  color:black;
-  padding: 30px;
+  color: BLACK;
+  padding: 45px;
 	font-weight:900;
-	 font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #006bb3;
+  transition: 100ms;
 }
+
+nav ul li a:hover{
+  text-decoration: none;
+  color: white;
+  padding: 45px;
+	font-weight:900;
+	font-family: 'Comfortaa', cursive;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #006bb3;
+
+}
+
+/* ALL NAVBAR ICONS CSS: css.gg NPM PACKAGE */
+/* Home icon */
+.gg-home-alt {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 18px;
+  height: 14px;
+  border: 2px solid;
+  border-top: 0;
+  border-radius: 2px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-bottom: -2px;
+  top: 1.25rem;
+  margin-left: 1rem;
+ }
+ 
+ .gg-home-alt::after,
+ .gg-home-alt::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute
+ }
+ 
+ .gg-home-alt::before {
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-top-left-radius: 4px;
+  transform: rotate(45deg);
+  top: -5px;
+  border-radius: 3px;
+  width: 14px;
+  height: 14px;
+  left: 0
+ }
+ 
+ .gg-home-alt::after {
+  width: 6px;
+  height: 10px;
+  background: currentColor;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  left: 4px;
+  bottom: -2px
+ } 
+
+ /* Subject icon */
+ .gg-browse {
+  display: block;
+  position: absolute;
+  transform: scale(var(--ggs,1));
+  box-sizing: border-box;
+  width: 16px;
+  height: 22px;
+  border: 2px solid;
+  border-radius: 3px;
+  background:
+  linear-gradient(
+  to left,
+  currentcolor 10px,
+  transparent 0
+  ) no-repeat center 2px/8px 2px,
+  linear-gradient(
+  to left,
+  currentcolor 10px,
+  transparent 0
+  ) no-repeat center 6px/8px 2px;
+  top: 0.9rem;
+  margin-left: 1rem;
+ }
+ 
+ .gg-browse::after,
+ .gg-browse::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 22px
+ }
+ 
+ .gg-browse::before {
+  width: 6px;
+  height: 6px;
+  border: 2px solid;
+  left: 3px;
+  top: 9px
+ }
+ 
+ .gg-browse::after {
+  width: 2px;
+  height: 4px;
+  background: currentColor;
+  bottom: 1px;
+  right: 2px;
+  transform: rotate(-45deg)
+ } 
+
+ /* Discord Icon */
+ .gg-bot {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 21px;
+  height: 10px;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-radius: 12px;
+  box-shadow:
+  0 0 0 2px,
+  -4px 0 0 -1px,
+  4px 0 0 -1px,
+  inset 0 -4px 0 -2px;
+  top: 1.25rem;
+  margin-left: 0.8rem;
+ }
+ 
+ .gg-bot::after,
+ .gg-bot::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  box-shadow: 0 0 0 2px;
+  top: 3px
+ }
+ 
+ .gg-bot::before {
+  left: -4px;
+  border-radius: 3px
+ }
+ 
+ .gg-bot::after {
+  border-radius: 100px;
+  right: -4px
+ } 
+
+/* About icon */
+
+@keyframes gg-doc {
+  0% { left: -16px }
+  60%,to { left: 0 }
+ }
+ 
+ .gg-loadbar-doc {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  transform: scale(var(--ggs,1));
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  border-radius: 1px;
+  width: 12px;
+  height: 14px;
+  overflow: hidden;
+  top: 1rem;
+  margin-left: 1.25rem;
+ }
+ 
+ .gg-loadbar-doc::after,
+ .gg-loadbar-doc::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  height: 2px;
+  background: currentColor;
+  animation: gg-doc 1s linear infinite alternate
+ }
+ 
+ .gg-loadbar-doc::before {
+  width: 14px;
+  box-shadow: -4px 4px 0
+ }
+ 
+ .gg-loadbar-doc::after {
+  width: 5px;
+  top: 8px
+ } 
+
+ /* Contact Icon */
+ .gg-mail,
+ .gg-mail::after {
+  display: block;
+  box-sizing: border-box;
+  height: 14px;
+  border: 2px solid
+ }
+ 
+ .gg-mail {
+  overflow: hidden;
+  transform: scale(var(--ggs,1));
+  position: absolute;
+  width: 18px;
+  border-radius: 2px;
+  top: 1.2rem;
+  margin-left: 1rem;
+ }
+ 
+ .gg-mail::after {
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  width: 14px;
+  transform: rotate(-45deg);
+  bottom: 3px;
+  left: 0
+ } 
 
