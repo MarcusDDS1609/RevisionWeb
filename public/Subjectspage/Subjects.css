@@ -4,7 +4,7 @@ background:url(lightbg-min.jpg) no-repeat fixed;
 background-size: cover;
 background-position-x: 0;
 overflow: hidden;
-transition: 1s;
+transition: 0.5s;
 }
 
 
@@ -68,6 +68,7 @@ background: transparent; / optional: just make scrollbar invisible */
   padding: 10px 10px;
   border-radius: 10px;
   transition: 1s;
+  overflow: scroll;
 	
 
 }
