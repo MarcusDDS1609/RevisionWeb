@@ -200,12 +200,12 @@ function swapStyleSheet(sheet) {
 
 function darkMode() {
  
-  swapStyleSheet("subjectsdarkmodemode.css");
+  swapStyleSheet("../css/subjectsdarkmodemode.css");
   $.cookie("theme", "dark")
 }
 
 function lightMode() {
-  swapStyleSheet("Subjects.css");
+  swapStyleSheet("../css/Subjects.css");
   $.cookie("theme", "light")
 }
 

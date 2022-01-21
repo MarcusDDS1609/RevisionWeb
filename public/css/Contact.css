@@ -204,10 +204,15 @@ right: -440px;
 	  }
 	  
 	  body {
-		background-image: url('lightbg-min.jpg');
+		background: url('../Homepage/lightbg-min.jpg');
 		font-size: 12px;
+	
 	  }
 	  
+	  body::-webkit-scrollbar {
+		display: none;
+	  }
+
 	  body, button, input {
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
@@ -223,8 +228,11 @@ right: -440px;
 		flex: 0 1 700px;
 		margin: auto;
 		padding: 10px;
+		position: absolute;
+		top: 25%;
+		left: 30%;
 	  }
-	  
+
 	  .screen {
 		position: relative;
 		background: #3e3e3e;

@@ -1,9 +1,15 @@
  html { 
-background: url('monterey.png') no-repeat center center fixed;
+background: url('../images/monterey.png') no-repeat center center fixed;
 background-size: cover;
 background-position-x: 0;
+overflow: scroll;
+overflow-x: scroll;
 
+}
 
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 .Navbar {
