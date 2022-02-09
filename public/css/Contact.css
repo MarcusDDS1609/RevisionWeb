@@ -56,21 +56,6 @@ right: -440px;
 
 
 
-.emailbox{
-	height: 30px;
-width: 300px;
-background-color: white;
-border: none;
-color: rgb(46, 46, 46);
-padding: 16px 32px;
-text-decoration: none;
-margin: 4px 2px;
-cursor: pointer;
-border-radius: 8px;
-position: relative;
-right: -440px;
-
-}
 
 .form-control{
 	height: 50px;
